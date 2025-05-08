@@ -31,6 +31,8 @@ jobs:
           build-mode: none
         - language: java-kotlin
           build-mode: autobuild
+    env:
+      ICE_HOME: /opt/ice-3.6.5
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
