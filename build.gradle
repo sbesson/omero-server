@@ -16,6 +16,7 @@ java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(11)
     }
+    targetCompatibility = JavaVersion.VERSION_1_8
 }
 
 ext {
