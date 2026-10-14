@@ -578,7 +578,7 @@ public class RenderingSettingsImpl extends AbstractLevel2Service implements
         // otherwise set it to greyscale.
         RenderingModel defaultModel = null;
         int sizeC = pixels.getSizeC();
-        if (sizeC > 1 && sizeC < Renderer.MAX_CHANNELS) {
+        if (sizeC > 1) {
             for (RenderingModel model : renderingModels)
             {
                 if (model.getValue().equals(Renderer.MODEL_RGB))
